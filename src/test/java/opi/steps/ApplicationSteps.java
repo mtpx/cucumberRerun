@@ -24,11 +24,12 @@ public class ApplicationSteps {
 
     @When("^User click not existing button$")
     public void userClickNotExistingButton(){
-        $("input[name='not_existing']").click();
+        $(By.xpath("//a[contains(text(),'Gmail')]")).click();
     }
 
     @When("^User click existing button$")
-    public void userClickExistingButton(){
+    public void userClickExistingButton() throws InterruptedException {
+        Thread.sleep(5000);
         $(By.xpath("//a[contains(text(),'Gmail')]")).click();
 
     }
