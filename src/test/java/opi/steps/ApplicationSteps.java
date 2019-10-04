@@ -30,7 +30,7 @@ public class ApplicationSteps {
     @When("^User click existing button$")
     public void userClickExistingButton() throws InterruptedException {
         Thread.sleep(5000);
-        $(By.xpath("//a[contains(text(),'Gmail')]")).click();
+        $(By.xpath("//a[contains(text(),'Gmaisdfsdfsfl')]")).click();
 
     }
 
