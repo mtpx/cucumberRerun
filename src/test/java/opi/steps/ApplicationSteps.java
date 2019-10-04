@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ApplicationSteps {
 
-    SelenideElement element = $(".invalid");
+    SelenideElement element = $(By.xpath("//a[contains(text(),'Gmail')]"));
 
 
 
@@ -33,11 +33,11 @@ public class ApplicationSteps {
     @When("^User click existing button$")
     public void userClickExistingButton() throws InterruptedException {
         Thread.sleep(5000);
-        try {
+        //try {
             element.shouldBe(Condition.visible).click();
-        }catch (com.codeborne.selenide.ex.ElementNotFound e){
-            System.out.println("dalej");
-        }
+        //}catch (com.codeborne.selenide.ex.ElementNotFound e){
+          //  System.out.println("dalej");
+        //}
 
 
     }

@@ -10,6 +10,6 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty", "html:target/cucumber-report/single",
                 "json:target/cucumber-report/single/cucumber.json",
-                "rerun:rerun.txt"}        )
+                "rerun:rerun.txt","io.qameta.allure.cucumberjvm.AllureCucumberJvm"}        )
 public class RerunTest {
 }

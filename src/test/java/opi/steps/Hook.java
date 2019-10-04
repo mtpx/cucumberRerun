@@ -14,7 +14,7 @@ public class Hook {
 
     @Before
     public void initialize() throws IOException {
-        DOMConfigurator.configure("log4j.xml");
+        //DOMConfigurator.configure("log4j.xml");
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
         Configuration.browser = "chrome";
         Configuration.headless = false;
