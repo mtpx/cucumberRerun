@@ -1,5 +1,7 @@
 package opi.steps;
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import lombok.Getter;
@@ -14,6 +16,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ApplicationSteps {
 
+    SelenideElement element = $(".invalid");
 
 
 
@@ -30,7 +33,12 @@ public class ApplicationSteps {
     @When("^User click existing button$")
     public void userClickExistingButton() throws InterruptedException {
         Thread.sleep(5000);
-        $(By.xpath("//a[contains(text(),'Gmaisdfsdfsfl')]")).click();
+        try {
+            element.shouldBe(Condition.visible).click();
+        }catch (com.codeborne.selenide.ex.ElementNotFound e){
+            System.out.println("dalej");
+        }
+
 
     }
 
