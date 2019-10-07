@@ -1,11 +1,11 @@
 @application
-Feature: Application submit featuresA
+Feature: AApplication submit featuresA
 
   Background:
-    Given Open google site
+    Given AOpen google site
 
-  Scenario: Click existing button
-    When User click existing button
+  Scenario: AClick existing button
+    When AUser click existing button
 
 
 

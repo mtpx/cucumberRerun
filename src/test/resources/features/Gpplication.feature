@@ -2,9 +2,9 @@
 Feature: Application submit featuresG
 
 
-  Scenario: Click existing button
-    Given Open google site
-    When User click existing button
+  Scenario: GClick existing button
+    Given GOpen google site
+    When GUser click existing button
 
 
 

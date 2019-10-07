@@ -1,5 +1,4 @@
 package opi.steps;
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import cucumber.api.java.en.Given;
@@ -16,7 +15,7 @@ import static com.codeborne.selenide.Selenide.$;
 @Getter
 @Setter
 
-public class ApplicationSteps {
+public class ZpplicationSteps {
 
     SelenideElement element = $(By.xpath("//a[contains(text(),'Gmail')]"));
     SelenideElement element2 = $(By.xpath("//a[contains(text(),'Gmail')]"));
@@ -24,12 +23,12 @@ public class ApplicationSteps {
 
 
 
-    @Given("^AOpen google site$")
+    @Given("^ZOpen google site$")
     public void openGoogleSite(){
         Selenide.open("https://www.google.pl");
     }
 
-    @When("^AUser click not existing button$")
+    @When("^ZUser click not existing button$")
     public void userClickNotExistingButton(){
 
        Random r = new Random();
@@ -44,7 +43,7 @@ public class ApplicationSteps {
 
     }
 
-    @When("^AUser click existing button$")
+    @When("^ZUser click existing button$")
     public void userClickExistingButton() throws InterruptedException {
         Random r = new Random();
         int random = r.nextInt(11);

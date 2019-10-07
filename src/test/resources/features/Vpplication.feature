@@ -2,11 +2,11 @@
 Feature: Application submit featuresV
 
   Background:
-    Given Open google site
+    Given VOpen google site
 
 
-  Scenario: Click not existing button
-    When User click not existing button
+  Scenario: VClick not existing button
+    When VUser click not existing button
 
 
 
