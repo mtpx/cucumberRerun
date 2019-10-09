@@ -36,9 +36,9 @@ public class ZpplicationSteps {
        if (random<4)
            element_not_ex.click();
        else if (random>7)
-           element.click();
+           element_not_ex.click();
        else
-           element2.click();
+           element_not_ex.click();
 
 
     }

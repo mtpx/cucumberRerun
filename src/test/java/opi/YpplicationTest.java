@@ -1,4 +1,4 @@
-package opi;
+/*package opi;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty", "html:target/cucumber-report/single",
                 "json:target/cucumber-report/single/cucumber.json",
-                "rerun:rerun.txt","io.qameta.allure.cucumberjvm.AllureCucumberJvm"}        )
+                "rerun:yrerun.txt","io.qameta.allure.cucumberjvm.AllureCucumberJvm"}        )
 public class YpplicationTest {
 }
+*/
