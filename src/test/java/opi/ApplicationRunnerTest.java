@@ -11,5 +11,5 @@ import org.junit.runner.RunWith;
                 "pretty", "html:target/cucumber-report/single",
                 "json:target/cucumber-report/single/cucumber.json",
                 "rerun:arerun.txt","io.qameta.allure.cucumberjvm.AllureCucumberJvm"}        )
-public class ApplicationRunner {
+public class ApplicationRunnerTest {
 }
