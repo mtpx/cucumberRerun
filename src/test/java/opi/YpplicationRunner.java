@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features/Xpplication.feature",
+        features = "src/test/resources/features/Ypplication.feature",
         plugin = {
                 "pretty", "html:target/cucumber-report/single",
                 "json:target/cucumber-report/single/cucumber.json",
-                "rerun:xrerun.txt","io.qameta.allure.cucumberjvm.AllureCucumberJvm"}        )
-public class XpplicationRunnerTest {
+                "rerun:yrerun.txt","io.qameta.allure.cucumberjvm.AllureCucumberJvm"}        )
+public class YpplicationRunner {
 }
